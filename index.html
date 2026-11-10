@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>International Property Alerts — Property for sale in 20+ countries</title>
+  <meta name="description" content="Villas, apartments and investment homes abroad, with new-listing alerts and expert help from search to keys.">
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<!-- ============ NAVIGATION ============ -->
+<header class="nav" id="nav">
+  <div class="nav__bar">
+    <a href="#" class="nav__logo" aria-label="IPA home"><img src="assets/ipa-logo.svg" width="80" height="28" alt="IPA."></a>
+
+    <nav class="nav__links" aria-label="Main">
+      <button class="nav__link" data-menu="properties" aria-expanded="false">Properties</button>
+      <button class="nav__link" data-menu="invest" aria-expanded="false">Invest</button>
+      <button class="nav__link" data-menu="services" aria-expanded="false">Services</button>
+      <button class="nav__link" data-menu="guides" aria-expanded="false">Guides &amp; news</button>
+    </nav>
+
+    <a href="#contact" class="nav__cta">Talk to agent</a>
+    <button class="nav__burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span></button>
+  </div>
+
+  <div class="nav__panels">
+    <!-- Properties -->
+    <div class="mega mega--cols" data-panel="properties">
+      <div class="mega__col"><p class="mega__label">Europe</p>
+        <a href="#">Bulgaria</a><a href="#">Croatia</a><a href="#">Cyprus</a><a href="#">Georgia</a><a href="#">Greece</a><a href="#">Montenegro</a><a href="#">Spain</a><a href="#">Turkey</a><a href="#">United Kingdom</a></div>
+      <div class="mega__col"><p class="mega__label">Middle East &amp; Africa</p>
+        <a href="#">Egypt</a><a href="#">Oman</a><a href="#">Qatar</a><a href="#">UAE</a></div>
+      <div class="mega__col"><p class="mega__label">Asia &amp; Pacific</p>
+        <a href="#">Indonesia</a><a href="#">Cambodia</a><a href="#">Maldives</a><a href="#">New Zealand</a><a href="#">Philippines</a><a href="#">Thailand</a></div>
+      <div class="mega__col"><p class="mega__label">Americas</p>
+        <a href="#">Florida</a><a href="#">Mexico</a></div>
+      <div class="mega__col"><p class="mega__label">Collections</p>
+        <a href="#">New developments</a><a href="#">Luxury developments</a></div>
+    </div>
+
+    <!-- Invest -->
+    <div class="mega mega--feature" data-panel="invest">
+      <ul class="mega__list">
+        <li><a href="#">Development opportunities<span>Back new projects at an early stage, from land to finished buildings.</span></a></li>
+        <li><a href="#inner-circle">Inner Circle with Chris White<span>A private investor network with early access to off-market deals.</span></a></li>
+      </ul>
+      <div class="mega__card"><img src="assets/chris-white-logo.png" width="553" height="263" alt="Chris White"></div>
+    </div>
+
+    <!-- Services -->
+    <div class="mega mega--feature" data-panel="services">
+      <ul class="mega__list">
+        <li><a href="#services">Country guides<span>Rules, costs and taxes for buying in each destination.</span></a></li>
+        <li><a href="#services">Advertise with us<span>Put your development in front of active overseas buyers.</span></a></li>
+        <li><a href="#currency">Currency exchange<span>Better rates and lower fees when you send money overseas.</span></a></li>
+      </ul>
+      <div class="mega__card"><img src="assets/chris-white-logo.png" width="553" height="263" alt="Chris White"></div>
+    </div>
+
+    <!-- Guides & news -->
+    <div class="mega mega--feature" data-panel="guides">
+      <ul class="mega__list">
+        <li><a href="#how-it-works">How to buy property abroad<span>A step-by-step guide from first search to getting the keys.</span></a></li>
+        <li><a href="#">Country guides<span>Rules, costs and taxes for foreign buyers in each destination.</span></a></li>
+        <li><a href="#">Market news<span>Prices, trends and new launches in the markets we cover.</span></a></li>
+      </ul>
+      <div class="mega__card"><img src="assets/chris-white-logo.png" width="553" height="263" alt="Chris White"></div>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="hero__inner">
+    <div class="hero__copy">
+      <h1>International property for sale in 20+ countries</h1>
+      <p>Villas, apartments and investment homes abroad, with new-listing alerts and expert help from search to keys.</p>
+    </div>
+
+    <form class="search" id="search">
+      <div class="search__fields">
+        <label class="search__field">
+          <span>Location</span>
+          <select name="location">
+            <option value="">Any location</option>
+            <optgroup label="Europe"><option>Bulgaria</option><option>Croatia</option><option>Cyprus</option><option>Georgia</option><option>Greece</option><option>Montenegro</option><option>Spain</option><option>Turkey</option><option>United Kingdom</option></optgroup>
+            <optgroup label="Middle East &amp; Africa"><option>Egypt</option><option>Oman</option><option>Qatar</option><option>UAE</option></optgroup>
+            <optgroup label="Asia &amp; Pacific"><option>Indonesia</option><option>Cambodia</option><option>Maldives</option><option>New Zealand</option><option>Philippines</option><option>Thailand</option></optgroup>
+            <optgroup label="Americas"><option>Florida</option><option>Mexico</option></optgroup>
+          </select>
+        </label>
+        <label class="search__field">
+          <span>Type</span>
+          <select name="type">
+            <option value="">Any type</option><option>Villa</option><option>Apartment</option><option>Penthouse</option><option>Hotel</option><option>Branded residence</option><option>Land &amp; development</option>
+          </select>
+        </label>
+        <label class="search__field">
+          <span>Price</span>
+          <select name="price">
+            <option value="">Any price</option><option>Up to $150,000</option><option>$150,000 – $300,000</option><option>$300,000 – $600,000</option><option>$600,000 – $1,000,000</option><option>$1,000,000+</option>
+          </select>
+        </label>
+      </div>
+      <button class="search__submit" type="submit" aria-label="Search properties"><img src="assets/magnifying-glass.svg" width="30" height="30" alt=""></button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ COUNTRY / GEO MAP ============ -->
+<section class="country" id="countries">
+  <div class="country__text">
+    <div class="country__intro">
+      <h2>23 destinations. 4 regions. One place to search.</h2>
+      <p>Search homes and investment property in 22 countries across Europe, the Middle East, Asia and the Americas. Each destination has its own listings and a buying guide covering the rules, costs and taxes for foreign buyers.</p>
+      <a href="#" class="link-arrow link-arrow--gold">View all <img src="assets/arrow-right-gold.svg" width="24" height="24" alt=""></a>
+    </div>
+
+    <div class="country__picker">
+      <ul class="country__regions" role="tablist">
+        <li><button role="tab" data-region="europe">Europe</button></li>
+        <li><button role="tab" data-region="mea" aria-selected="true">Middle East &amp; Africa</button></li>
+        <li><button role="tab" data-region="apac">Asia &amp; Pacific</button></li>
+        <li><button role="tab" data-region="americas">Americas</button></li>
+      </ul>
+      <ul class="country__list" id="country-list" aria-live="polite"></ul>
+    </div>
+  </div>
+
+  <div class="country__map" id="map" aria-label="World map with property locations"></div>
+</section>
+
+<!-- ============ LUXURY COLLECTION (sticky stack) ============ -->
+<section class="collection" id="collection">
+  <div class="collection__head">
+    <div class="collection__title">
+      <p class="eyebrow">Collections</p>
+      <h2>Luxury property abroad</h2>
+    </div>
+    <div class="collection__aside">
+      <p>High-end villas, penthouses and branded residences, chosen for location, build quality and resale potential.</p>
+      <a href="#" class="btn btn--gold">View All</a>
+    </div>
+  </div>
+
+  <div class="collection__stack">
+    <article class="listing">
+      <div class="listing__info">
+        <h3>Elegant Hotel Twin Bed Suite in Batumi, Georgia</h3>
+        <div class="listing__meta">
+          <div><p class="listing__label">Location</p><p>Batumi, Autonomous Republic of Adjara, Georgia</p></div>
+          <hr>
+          <div class="listing__row">
+            <div><p class="listing__label">Sqft</p><p>29.8 m²</p></div>
+            <div><p class="listing__label">Room(s)</p><p>01</p></div>
+            <div><p class="listing__label">Type</p><p>Hotel</p></div>
+          </div>
+          <hr>
+          <div><p class="listing__label">Price</p><p class="listing__price">$154,547</p></div>
+        </div>
+      </div>
+      <div class="listing__img"><img src="assets/listing-1.jpg" alt="Infinity pool at sunset beside a curved high-rise in Batumi" loading="lazy"></div>
+    </article>
+
+    <article class="listing">
+      <div class="listing__info">
+        <h3>High Yield Ubud Villas in Prime Penestanan</h3>
+        <div class="listing__meta">
+          <div><p class="listing__label">Location</p><p>Sayan, Ubud, Gianyar Regency, Bali, Indonesia</p></div>
+          <hr>
+          <div class="listing__row">
+            <div><p class="listing__label">Sqft</p><p>140 m²</p></div>
+            <div><p class="listing__label">Room(s)</p><p>02</p></div>
+            <div><p class="listing__label">Type</p><p>Property</p></div>
+          </div>
+          <hr>
+          <div><p class="listing__label">Price</p><p class="listing__price">$249,000</p></div>
+        </div>
+      </div>
+      <div class="listing__img"><img src="assets/listing-2.jpg" alt="Timber villa with pool in Ubud, Bali" loading="lazy"></div>
+    </article>
+
+    <article class="listing">
+      <div class="listing__info">
+        <h3>Oceanfront Standard Room with Premium Lifestyle</h3>
+        <div class="listing__meta">
+          <div><p class="listing__label">Location</p><p>Batumi, Autonomous Republic of Adjara, Georgia</p></div>
+          <hr>
+          <div class="listing__row">
+            <div><p class="listing__label">Sqft</p><p>37.9 m²</p></div>
+            <div><p class="listing__label">Room(s)</p><p>01</p></div>
+            <div><p class="listing__label">Type</p><p>Hotel</p></div>
+          </div>
+          <hr>
+          <div><p class="listing__label">Price</p><p class="listing__price">$200,922</p></div>
+        </div>
+      </div>
+      <div class="listing__img"><img src="assets/listing-3.jpg" alt="Oceanfront tower with pool deck in Batumi" loading="lazy"></div>
+    </article>
+  </div>
+</section>
+
+<!-- ============ CURRENCY SAVINGS ============ -->
+<section class="currency" id="currency">
+  <div class="currency__copy">
+    <h2>Save thousands on your overseas property purchase</h2>
+    <p>Banks often add hidden margins to large transfers. Our currency partner, First Class Currency, gives property buyers better rates and personal support.</p>
+    <a href="#" class="btn btn--navy">Get a free quote</a>
+  </div>
+
+  <div class="features">
+    <a href="#" class="feature">
+      <img src="assets/feature-1.jpg" alt="" loading="lazy">
+      <span>Better rates than most high-street banks</span>
+    </a>
+    <a href="#" class="feature">
+      <img src="assets/feature-2.jpg" alt="" loading="lazy">
+      <span>Fast, tracked international transfers</span>
+    </a>
+    <a href="#" class="feature feature--right">
+      <img src="assets/feature-3.jpg" alt="" loading="lazy">
+      <span>A dedicated currency specialist</span>
+    </a>
+  </div>
+</section>
+
+<!-- ============ HOW IT WORKS (pinned, scroll-driven) ============ -->
+<section class="how" id="how-it-works">
+  <div class="how__pin">
+    <div class="how__left">
+      <div>
+        <h2>How to buy property abroad in 4 steps</h2>
+        <p>Guidance, alerts and trusted local partners at every stage.</p>
+      </div>
+      <ol class="how__steps">
+        <li class="is-active"><button data-step="0">Step 1</button></li>
+        <li><button data-step="1">Step 2</button></li>
+        <li><button data-step="2">Step 3</button></li>
+        <li><button data-step="3">Step 4</button></li>
+      </ol>
+    </div>
+
+    <div class="how__right">
+      <div class="how__detail is-active">
+        <p class="how__num">Step 1</p><h3>Tell us what you want</h3>
+        <p class="how__desc">Share your destination, property type and budget.</p>
+      </div>
+      <div class="how__detail">
+        <p class="how__num">Step 2</p><h3>Get property alerts</h3>
+        <p class="how__desc">Receive new listings and market updates that match your brief, straight to your inbox.</p>
+      </div>
+      <div class="how__detail">
+        <p class="how__num">Step 3</p><h3>Meet our trusted partners</h3>
+        <p class="how__desc">We connect you with vetted lawyers, currency specialists and relocation experts.</p>
+      </div>
+      <div class="how__detail">
+        <p class="how__num">Step 4</p><h3>Complete your purchase</h3>
+        <p class="how__desc">Our partners guide you through contracts, payment and handover.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INNER CIRCLE + SERVICES ============ -->
+<section class="inner" id="inner-circle">
+  <div class="inner__top">
+    <div class="inner__left">
+      <div class="inner__heading">
+        <p class="eyebrow eyebrow--sm">The Inner Circle with Chris White</p>
+        <h2>Get access to off-market property deals</h2>
+        <p class="inner__sub">Some of the best deals never reach the open market.</p>
+      </div>
+      <div class="inner__img-lg"><img src="assets/inner-circle-event.jpg" alt="Inner Circle members celebrating in front of an illuminated IDEAL sign" loading="lazy"></div>
+    </div>
+    <div class="inner__right">
+      <div class="inner__body">
+        <p>Chris White's Inner Circle is a private network of investors and entrepreneurs. Members get early access to off-market property, market insight and direct introductions to developers.</p>
+        <a href="#" class="link-arrow">Book a call <img src="assets/arrow-right.svg" width="24" height="24" alt=""></a>
+      </div>
+      <div class="inner__img-sm"><img src="assets/inner-circle-chris.jpg" alt="Chris White standing beside a luxury car" loading="lazy"></div>
+    </div>
+  </div>
+
+  <div class="services" id="services">
+    <div class="services__head">
+      <div>
+        <h2>Services for international property buyers</h2>
+        <p>Everything you need to research, fund and market property abroad.</p>
+      </div>
+      <a href="#" class="link-arrow">View all services <img src="assets/arrow-right.svg" width="24" height="24" alt=""></a>
+    </div>
+    <div class="services__grid">
+      <a href="#" class="service">
+        <img src="assets/service-guides.jpg" alt="" loading="lazy">
+        <div><h3>Country guides</h3><p>Rules, costs and taxes for buying in each destination.</p></div>
+      </a>
+      <a href="#" class="service">
+        <img src="assets/service-advertise.jpg" alt="" loading="lazy" style="object-position: center 14%">
+        <div><h3>Advertise with us</h3><p>Put your development in front of active overseas buyers.</p></div>
+      </a>
+      <a href="#" class="service">
+        <img src="assets/service-currency.jpg" alt="" loading="lazy" style="object-position: 21% center">
+        <div><h3>Currency exchange</h3><p>Better rates and lower fees when you send money overseas.</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer" id="contact">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="assets/ipa-wordmark-cream.svg" width="500" height="153" alt="International Property Alerts">
+      <p>Get instant updates on premium properties worldwide, from luxury villas to city apartments. Be the first to know about exclusive listings tailored to your preferences.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Footer">
+      <a href="#countries">Properties</a><a href="#inner-circle">Invest</a><a href="#services">Services</a><a href="#how-it-works">Guides &amp; News</a>
+    </nav>
+  </div>
+  <hr>
+  <div class="footer__bottom">
+    <img src="assets/ipa-logo-cream.svg" width="107" height="38" alt="IPA.">
+    <div class="footer__links">
+      <div><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Youtube</a><a href="#">X</a><a href="#">Linkedin</a></div>
+      <div><a href="#">Privacy &amp; Terms</a><a href="#">Contact</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/d3-array@3.2.4/dist/d3-array.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/d3-geo@3.1.1/dist/d3-geo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
