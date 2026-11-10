@@ -3,7 +3,7 @@
 The IPA homepage, built from the Figma design (Home Page frame) and the
 "Home page – Explanation" notes.
 
-**Live site:** https://meidina477.github.io/ipa-homepage/
+**Live site:** https://ipa-property.github.io/ipa-homepage/
 
 ## What's in it
 
