@@ -204,16 +204,16 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 
 /* ===== How it works ===== */
 .how { position: relative; height: 400vh; background: var(--ink); }
-.how__pin { position: sticky; top: 0; height: 100vh; min-height: 640px; display: flex; justify-content: space-between; align-items: center; padding: 140px 111px 80px; }
-.how__left { height: 100%; display: flex; flex-direction: column; justify-content: space-between; width: 500px; color: var(--cream); }
-.how__left h2 { font-size: 48px; font-weight: 700; margin-bottom: 20px; }
-.how__left > div > p { font-size: 24px; }
-.how__steps { display: flex; flex-direction: column; gap: 17px; width: 320px; }
-.how__steps li { position: relative; padding-bottom: 19px; }
+.how__pin { position: sticky; top: 0; height: 100vh; min-height: 640px; display: flex; justify-content: space-between; align-items: center; padding: 130px 111px 64px; }
+.how__left { height: 100%; display: flex; flex-direction: column; justify-content: space-between; gap: 32px; width: 500px; color: var(--cream); }
+.how__left h2 { font-size: clamp(32px, 5.4vh, 48px); font-weight: 700; margin-bottom: 20px; }
+.how__left > div > p { font-size: clamp(18px, 2.7vh, 24px); }
+.how__steps { display: flex; flex-direction: column; gap: 10px; width: 220px; margin-top: auto; }
+.how__steps li { position: relative; padding-bottom: 10px; }
 .how__steps li::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 1px; background: linear-gradient(90deg, rgba(201,180,138,.25), var(--sand) 50%, rgba(201,180,138,.25)); }
 .how__steps li::before { content: ""; position: absolute; left: 0; bottom: 0; height: 1px; width: 0; background: var(--sand); z-index: 1; transition: width .5s var(--ease); }
 .how__steps li.is-active::before { width: 100%; }
-.how__steps button { font-size: 24px; font-weight: 400; color: rgba(255,255,255,.5); transition: color .3s; }
+.how__steps button { font-size: 16px; font-weight: 400; color: rgba(255,255,255,.5); transition: color .3s; }
 .how__steps li.is-active button { color: var(--cream); font-weight: 500; }
 
 .how__right { position: relative; width: 500px; height: 260px; color: var(--white); }
