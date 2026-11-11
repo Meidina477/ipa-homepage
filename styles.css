@@ -14,7 +14,7 @@
   --gutter: clamp(20px, 7vw, 100px);
   --nav-top: 40px;
   --nav-h: 80px;
-  --collection-head: 200px;
+  --collection-head: 136px;
 
   --font: "Satoshi", system-ui, -apple-system, "Segoe UI", sans-serif;
   --ease: cubic-bezier(.22, .61, .36, 1);
@@ -150,30 +150,30 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
 @keyframes drop { from { transform: translateY(-14px); opacity: 0; } }
 
 /* ===== Collection (sticky stack) ===== */
-.collection { position: relative; background: var(--white); padding-bottom: 64px;
-  --card-h: min(calc(100vh - var(--collection-head) - 48px), 46vw, 600px); }
+.collection { position: relative; background: var(--ink); }
 .collection__head {
   position: sticky; top: 0; z-index: 3; height: var(--collection-head);
   background: var(--white); color: #000;
   display: flex; align-items: center; justify-content: space-between; gap: 40px;
   padding: 0 120px;
 }
-.collection__title { display: flex; flex-direction: column; gap: 12px; width: 426px; }
-.collection__title h2 { font-size: 40px; font-weight: 500; }
-.collection__aside { width: 500px; display: flex; flex-direction: column; gap: 21px; align-items: flex-start; }
-.collection__aside p { font-size: 20px; font-weight: 400; text-wrap: pretty; }
+.collection__title { display: flex; flex-direction: column; gap: 8px; width: 426px; }
+.collection__title h2 { font-size: 32px; font-weight: 500; }
+.collection__title .eyebrow { font-size: 14px; }
+.collection__aside { width: 440px; display: flex; flex-direction: column; gap: 14px; align-items: flex-start; }
+.collection__aside p { font-size: 16px; font-weight: 400; text-wrap: pretty; }
+.collection__aside .btn { font-size: 15px; padding: 10px 18px; }
 
 .listing {
-  position: sticky; top: calc(var(--collection-head) + 24px);
-  height: var(--card-h); width: min(calc(var(--card-h) * 2), calc(100% - 2 * var(--gutter)));
-  margin: 0 auto 48px;
+  position: sticky; top: var(--collection-head);
+  height: calc(100vh - var(--collection-head)); min-height: 440px; max-height: 760px;
   display: grid; grid-template-columns: 1fr 1fr; background: var(--ink); color: var(--cream);
   overflow: hidden; transform-origin: center top;
 }
-.listing__info { display: flex; flex-direction: column; justify-content: center; gap: clamp(20px, 4vh, 44px); padding: 32px clamp(28px, 4vw, 56px); will-change: opacity; }
+.listing__info { display: flex; flex-direction: column; justify-content: center; gap: clamp(20px, 5vh, 72px); padding: 32px 32px 32px clamp(40px, 9.4vw, 135px); will-change: opacity; }
 .listing__info > * { width: 100%; max-width: 450px; }
-.listing h3 { line-height: 1.2; min-height: 3.6em; font-size: clamp(22px, 2.2vw, 32px); font-weight: 500; text-wrap: pretty; }
-.listing__meta { display: flex; flex-direction: column; gap: clamp(18px, 3vh, 30px); }
+.listing h3 { line-height: 1.2; min-height: 2.4em; font-size: clamp(24px, 2.4vw, 36px); font-weight: 500; text-wrap: pretty; }
+.listing__meta { display: flex; flex-direction: column; gap: clamp(14px, 2.6vh, 28px); }
 .listing__meta hr { width: 100%; margin: 0; border: 0; height: 1px; background: var(--cream); opacity: .9; }
 .listing__meta p { font-size: 18px; }
 .listing__label { font-size: 12px !important; letter-spacing: .1em; text-transform: uppercase; margin-bottom: 10px !important; }
@@ -279,7 +279,8 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .country { grid-template-columns: minmax(0, 1fr); padding: 100px var(--gutter); }
   .country__text { gap: 60px; max-width: 560px; }
   .country__map { justify-self: center; }
-  .collection__head { padding: 0 var(--gutter) 40px; }
+  .collection__head { padding: 0 var(--gutter); }
+  .listing__info { padding-left: var(--gutter); padding-right: 32px; }
   .currency, .inner, .footer { padding-left: var(--gutter); padding-right: var(--gutter); }
   .how__pin { padding-left: var(--gutter); padding-right: var(--gutter); gap: 40px; }
   .inner__top { gap: 60px; }
@@ -322,7 +323,7 @@ ul, ol { list-style: none; margin: 0; padding: 0; }
   .collection__aside p { font-size: 16px; }
   .collection__aside .btn { font-size: 16px; padding: 10px 16px; }
   .eyebrow { font-size: 14px; }
-  .listing { grid-template-columns: 1fr; grid-template-rows: 42% 1fr; height: calc(100vh - var(--collection-head) - 40px); min-height: 520px; width: calc(100% - 32px); top: calc(var(--collection-head) + 16px); margin-bottom: 32px; }
+  .listing { grid-template-columns: 1fr; grid-template-rows: 42% 1fr; min-height: 560px; }
   .listing__img { order: -1; }
   .listing__info { padding: 24px var(--gutter); gap: 20px; justify-content: flex-start; }
   .listing h3 { font-size: 24px; min-height: 0; }
